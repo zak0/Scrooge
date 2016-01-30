@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="new_action_tags_bg">#11000000</color>
+    <color name="green_number">#ff669900</color>
+    <color name="red_number">#ffcc0000</color>
+    <color name="horiz_divider">#44000000</color>
+
+</resources>

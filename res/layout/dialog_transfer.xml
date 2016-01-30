@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:id="@+id/textView"/>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_transfer_from"
+            android:layout_toRightOf="@+id/textView"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/spinner_transfer_from"/>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_transfer_to"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/spinner_transfer_from"
+            android:layout_alignLeft="@+id/spinner_transfer_from"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText_transfer_amount"
+            android:layout_below="@+id/spinner_transfer_to"
+            android:layout_alignParentLeft="true"
+            android:hint="@string/action_amount"
+            android:numeric="decimal"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_as_action"
+            android:id="@+id/checkBox_transger_save_as_action"
+            android:layout_below="@+id/editText_transfer_amount"
+            android:checked="true"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:id="@+id/button_transfer_save"
+            android:layout_below="@+id/checkBox_transger_save_as_action"
+            android:layout_alignParentLeft="true"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/button_transfer_cancel"
+            android:layout_alignTop="@+id/button_transfer_save"
+            android:layout_toRightOf="@+id/button_transfer_save"/>
+
+</RelativeLayout>

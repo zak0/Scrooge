@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme" >
 
         <activity
-            android:name=".poorman.activity.PoormanActivity"
+            android:name=".scrooge.activity.PoormanActivity"
             android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
